@@ -3,4 +3,4 @@ def minutes_between(end_minute: int, next_start_minute: int) -> int:
 
 
 def is_back_to_back(end_minute: int, next_start_minute: int, buffer_minutes: int = 10) -> bool:
-    return minutes_between(end_minute, next_start_minute) > buffer_minutes
+    return minutes_between(end_minute, next_start_minute) < buffer_minutes
